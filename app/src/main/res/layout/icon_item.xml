@@ -3,6 +3,9 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_height="wrap_content"
   android:layout_width="match_parent"
+  android:background="?android:attr/selectableItemBackground"
+  android:clickable="true"
+  android:focusable="true"
   android:gravity="start|center_vertical"
   android:orientation="horizontal">
 
@@ -13,7 +16,8 @@
     android:layout_margin="@dimen/icon_margin"
     android:scaleType="fitXY"
     android:adjustViewBounds="true"
-    android:layout_weight="@integer/icon_weight"/>
+    android:layout_weight="@integer/icon_weight"
+    android:contentDescription="@string/content_description_placeholder"/>
 
   <TextView
     android:id="@+id/label"
